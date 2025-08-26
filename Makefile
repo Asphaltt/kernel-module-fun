@@ -10,6 +10,7 @@ obj-m += check-tcp-syncookies.o
 obj-m += custom-netlink.o
 obj-m += kprobe_tcp_conn_request.o
 obj-m += run-bpf-prog.o
+obj-m += percpu-ptr.o
 
 all:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
